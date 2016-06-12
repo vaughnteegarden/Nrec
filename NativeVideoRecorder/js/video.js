@@ -33,6 +33,9 @@ var sch;
 var vw;
 var vh;
 
+var filename = 'nrec-';
+var format = '.webm';
+var when;
 
 var res320 = {
   audio: true,
@@ -64,6 +67,7 @@ var res1920 = {
   video: true,
   video: {width: {exact: 1920}, height: {exact: 1080}}
 };
+
 
 // took out secure origin check, we're giving permissions in the manifest
 
@@ -241,7 +245,8 @@ function download() {
   var a = document.createElement('a');
   a.style.display = 'none';
   a.href = url;
-  a.download = 'recording.webm';
+	when = moment().format('YYYYMMDD-HHMMSS').toString();
+  a.download = filename+when+format;
   document.body.appendChild(a);
   a.click();
   setTimeout(function() {
