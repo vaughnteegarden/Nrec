@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NativeVideoRecorder</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+  <div id="header">
+    <img class="logo" src="assets/nrec48.png">
+    
+    <div class="windowcontrols">
+      <button class="wincon" id="minimize"><img src="assets/minus32.png"></button>
+      <button class="wincon" id="window"><img src="assets/win32.png"></button>
+      <button class="wincon" id="exit"><img src="assets/close32.png"></button>
+    </div>
+    
+    <div class="title">Native Video Recorder</div>
+  </div>
+  
+  <div id="container">
+    <div id="vid">
+      <video id="gum" autoplay muted></video>
+      
+      <div>
+        <button class="controls" id="record" data-recording="false"><img src="assets/record48.png"><span>Start Recording</span></button>
+        <button class="controls" id="download" disabled><img src="assets/save48bw.png"><span>Save Video</span></button>
+      </div>
+    </div>
+    
+    <div id="settings">
+      <div>
+        <img src="assets/settings32.png" class="settingsicon"><span class="settingstitle">Settings</span>
+      </div>
+      <div id="resolutiondiv">
+        <span>Resolution</span>
+        <input type="radio" class="resolution" name="resolution" value="r320" id="r320" checked><label for="r320">320 x 240</label><br/>
+        <input type="radio" class="resolution" name="resolution" value="r400" id="r400"><label for="r400">400 x 300</label><br/>
+        <input type="radio" class="resolution" name="resolution" value="r640" id="r640"><label for="r640">640 x 480</label><br/>
+        <input type="radio" class="resolution" name="resolution" value="r800" id="r800"><label for="r800">800 x 600</label><br/>
+        <input type="radio" class="resolution" name="resolution" value="r1280" id="r1280"><label for="r1280">1280 x 720</label><br/>
+        <input type="radio" class="resolution" name="resolution" value="r1920" id="r1920"><label for="r1920">1920 x 1080</label><br/>
+        <br/>
+        Note:<br/>Black display means unsupported resolution.
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/adapter.js"></script>
+  <script src="js/video.js"></script>
+
+</body>
+</html>

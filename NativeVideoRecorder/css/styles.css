@@ -1,0 +1,141 @@
+body {
+  background:#333;
+  padding:0;
+  margin:0;
+  font-family:Carlito;
+  color:#aaa;
+  font-size:1em;
+}
+.floatleft {
+  float:left;
+}
+.floatright {
+  float:right;
+}
+/******************************************************************************/
+/******************************************************************************/
+#header {
+  background:#444;
+  height:68px;
+  border-bottom:1px solid black;
+  -webkit-app-region: drag;
+}
+#header .logo {
+  float:left;
+  padding:10px 20px 10px 10px;
+  height:48px;
+  width:48px;
+}
+#header .title {
+  font-family:Cousine;
+  color:#ccc;
+  padding-top:22px;
+  font-size:1.4em;
+  text-align:center;
+}
+#header .windowcontrols {
+  float:right;
+  padding-top:18px;
+  padding-right:10px;
+}
+button.wincon {
+  height:24px;
+  width:24px;
+  border-radius:3px;
+  background-color:#666;
+  border:0;
+  margin:0 2px 0 0;
+  padding:0;
+  -webkit-app-region: no-drag;
+}
+button.wincon:focus {
+  outline: none;
+}
+button.wincon img {
+  height:24px;
+  width:24px;
+}
+button#minimize { background-image: url("assets/minus32.png");}
+button#window { background-image: url("assets/window32.png");}
+button#exit { background-image: url("assets/close32.png");}
+
+/******************************************************************************/
+/******************************************************************************/
+#settings {
+  float:right;
+  width:200px;
+  padding:15px;
+  border:1px solid #666;
+  border-radius:5px;
+}
+.settingsicon {
+  float:left;
+  margin-right:8px;
+}
+.settingstitle {
+  display:inline-block;
+  font-size:1.4em;
+  font-weight:bold;
+}
+#resolutiondiv {
+  clear:both;
+  padding-top: 8px;
+}
+#resolutiondiv span {
+  display:block;
+  font-weight:bold;
+}
+#resolutiondiv input {
+  padding:2px 0 0 8px;
+  margin:4px;
+}
+/******************************************************************************/
+/******************************************************************************/
+#container {
+  padding:15px;
+}
+#vid {
+  float:left;
+}
+.controls {
+  background: #444;
+  background-image: -webkit-linear-gradient(top, #555, #444);
+  background-image: linear-gradient(to bottom, #555, #444);
+  -webkit-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size:1em;
+  padding: 1px 4px;
+  border: solid #444 1px;
+  text-decoration: none;
+  width:170px;
+}
+.controls:hover {
+  background: #555;
+  background-image: -webkit-linear-gradient(top, #595959, #494949);
+  background-image: linear-gradient(to bottom, #595959, #494949);
+  text-decoration: none;
+}
+.controls:focus {
+  outline: none;
+}
+.controls img {
+  height:32px;
+  width:32px;
+  float:left;
+}
+.controls span {
+  display:inline-block;
+  padding-top:6px;
+}
+
+video {
+  width: 320px;
+  height: 240px;
+  margin: 0 0 15px 0;
+  padding:0;
+  border:1px solid #666;
+  border-radius:5px;
+  
+}
+
